@@ -14,7 +14,7 @@ GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 gh = Github(GITHUB_TOKEN)
 gemini_client = Client.configure(api_key=os.environ.get('GEMINI_API_KEY'))
 
-print(f"\n GEMINI_API_KEY: {os.environ.get('GEMINI_API_KEY'}}")
+print(f" GEMINI_API_KEY: {gemini_client}")
 
 class PRDetails:
     def __init__(self, owner: str, repo: str, pull_number: int, title: str, description: str):
