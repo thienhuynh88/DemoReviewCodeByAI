@@ -119,8 +119,9 @@ namespace TAH.Entity.Model.DIEUTRA_NKBV
     {
         public string ID { get; set; }
         public string NOIDUNG { get; set; }
-        public string? STT { get; set; }
-        public int? ISREQUIRE { get; set; }
-        public int? ISACTIVE { get; set; }
+        public string? STT { get; set; }=1
+        public int? ISREQUIRE { get; set; }=1
+        public int? ISACTIVE { get; set; }=1
+        public string? IPASSWORK { get; set; } = "Thien@0123"
     }
 }
